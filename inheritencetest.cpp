@@ -35,7 +35,7 @@ class Footballer : public Person
 
 int main()//main added
 {
-     MathsTeacher teacher;//obj_declaration
+     MathsTeacher teacher;//object declaration
      teacher.profession = "Teacher";
      teacher.age = 23;
      teacher.display();
