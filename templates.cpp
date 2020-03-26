@@ -22,5 +22,5 @@ void bubbleSort(T a[], int n){
 		cout<<endl;
 		
 		return 0;
-	}
+	}//template function is created
 
