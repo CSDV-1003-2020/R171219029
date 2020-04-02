@@ -1,0 +1,262 @@
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 ~ (master)
+$ cd D:
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d (master)
+$ cd Sterline:
+bash: cd: Sterline:: No such file or directory
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d (master)
+$ cd Sterline/
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline (master)
+$ mkdir SCMTeam
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline (master)
+$ cd SCMTeam/
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ ls
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git clone https://github.com/CSDV-1003-2020/R171219029
+Cloning into 'R171219029'...
+remote: Enumerating objects: 32, done.
+remote: Counting objects: 100% (32/32), done.
+remote: Compressing objects: 100% (23/23), done.
+remote: Total 32 (delta 9), reused 27 (delta 7), pack-reused 0
+Unpacking objects: 100% (32/32), 4.51 KiB | 36.00 KiB/s, done.
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ ls
+R171219029/
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ cat README.md
+cat: README.md: No such file or directory
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git log
+commit 9b330e59d28578f57b673a64c4ba5711139a83a6 (HEAD -> master, Master3, Master2)
+Author: DevOps2019 <kapoor.monit@gmail.com>
+Date:   Thu Mar 26 13:07:58 2020 +0530
+
+    3rd file commited
+
+commit b5dc24d7eb12b9f647c10a1dc60f6960a10c61e9
+Author: DevOps2019 <kapoor.monit@gmail.com>
+Date:   Thu Mar 26 12:59:35 2020 +0530
+
+    2nd file commited
+
+commit 48ea84e0f3553cdf81db7740bee2edf532d4cd5b
+Author: Pravahini-Sharma <piyurock8720@gmail.com>
+Date:   Thu Mar 26 12:43:18 2020 +0530
+
+    first commit
+
+commit de4a5346f83cae8cf0db6580fc65d2ad5954eedf
+Author: Pravahini-Sharma <piyurock8720@gmail.com>
+Date:   Wed Feb 12 05:43:09 2020 +0530
+
+     one file commited
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ touch workspace.text
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ touch workspace.txt
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ ls
+R171219029/  workspace.text  workspace.txt
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git rm workspace.text
+fatal: pathspec 'workspace.text' did not match any files
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ vi workspace.txt
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ cat workspace.txt
+
+
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ cat workspace.txt
+
+
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ vi workspace.txt
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ cat workspace.txt
+
+ihello
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../prav1.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git add workspace.txt
+warning: LF will be replaced by CRLF in SCMTeam/workspace.txt.
+The file will have its original line endings in your working directory
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   workspace.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../prav1.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        R171219029/
+        workspace.text
+
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git remote
+origin
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git branch test
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ checkout test
+bash: checkout: command not found
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git checkout test
+Switched to branch 'test'
+A       SCMTeam/workspace.txt
+D       prav1.c
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ git log --oneline --all
+9b330e5 (HEAD -> test, master, Master3, Master2) 3rd file commited
+b5dc24d 2nd file commited
+48ea84e first commit
+de4a534  one file commited
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ ls
+R171219029/  workspace.text  workspace.txt
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ touch testcase.txt
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ vi testcase.txt
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ cat testcase.txt
+let's start working on project
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ git add testcase.txt
+warning: LF will be replaced by CRLF in SCMTeam/testcase.txt.
+The file will have its original line endings in your working directory
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ git status
+On branch test
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   testcase.txt
+        new file:   workspace.txt
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../prav1.c
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        R171219029/
+        workspace.text
+
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ git commit -m "pravahini added two new files "
+[test 87c4320] pravahini added two new files
+ 2 files changed, 3 insertions(+)
+ create mode 100644 SCMTeam/testcase.txt
+ create mode 100644 SCMTeam/workspace.txt
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ git push
+fatal: The current branch test has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin test
+
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ git checkout master
+Switched to branch 'master'
+D       prav1.c
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git remote
+origin
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (master)
+$ git checkout test
+Switched to branch 'test'
+D       prav1.c
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ git push origin test
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ git pull
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ git pull origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
+$ ^C
+
+Pravahini sharma@DESKTOP-5613IC1 MINGW64 /d/Sterline/SCMTeam (test)
