@@ -136,8 +136,7 @@ void quickSort(struct Node **headRef)
     (*headRef) = quickSortRecur(*headRef, getTail(*headRef)); 
     return; 
 } 
-  
-// Driver program to test above functions 
+   
 int main() 
 { 
     struct Node *a = NULL; 
@@ -156,5 +155,4 @@ int main()
     printList(a); 
   
     return 0; 
-} 
-
+}
